@@ -1,0 +1,52 @@
+body {
+    background-image: url(../images/light-grey-terrazzo.png);
+}
+
+.container {
+    margin: 5% auto;
+}
+
+#gameArea {
+    margin: 1%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #777777;
+    background-color: whitesmoke;
+}
+
+#credentialsArea {
+    margin: 1%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #777777;
+    background-color: whitesmoke;
+}
+
+#playerArea {
+    margin: 1%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #777777;
+    background-color: whitesmoke;
+}
+
+#recentUsers {
+    margin: 1%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #777777;
+    background-color: whitesmoke;
+}
+
+#chatArea {
+    margin: 1%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #777777;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RPS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/logic.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" id="gameArea">
+                <div class="panel-heading">Welcome to the Game!</div>
+                <hr>
+                <div class="panel-body" id="game-area">
+                    <h4 class="prompt"></h4>
+                    <form class="game">
+                    <button type="submit" class="btn btn-secondary game-btn" value="rock">Rock!</button>
+                    <button type="submit" class="btn btn-secondary game-btn" value="paper">Paper!</button>
+                    <button type="submit" class="btn btn-secondary game-btn" value="scissors">Scissors!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3" id="sidebar">
+                <div class="row">
+                    <div class="col-md-12" id="credentialsArea">
+                        <div class="panel-body" id="credentials-area">
+                            <form>
+                                <div class="form-group">
+                                    <label for="user-name">Username</label>
+                                    <input type="text" class="form-control" id="user-name" aria-describedby="emailHelp" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email-input">Email Address</label>
+                                    <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                    <button type="submit" class="btn btn-secondary submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12" id="playerArea">
+                            <div class="panel-heading">Player Info</div>
+                            <hr>
+                            <div class="panel-body" id="player-area">
+                                <ul>
+                                    <li><strong>Username:</strong> <p class="username-area"></p></li>
+                                    <li><strong>Email:</strong> <p class="email-area"></p></li>
+                                    <li><strong>Join Date:</strong> <p class="join-date"></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="recentUsers">
+                        <div class="panel-heading">Recent Players</div>
+                        <hr>
+                        <div class="panel-body" id="users-area"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="chatArea">
+                <div class="panel-heading">Player Chat</div>
+                <hr>
+                <div class="panel-body" id="chat-area">
+                    <form class="chat">
+                        <div class="form-group">
+                            <label for="chat-input">Send a message:</label>
+                            <textarea class="form-control" id="chat-input" rows="1"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary message">Send</button>       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
